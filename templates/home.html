@@ -9,15 +9,28 @@
     <input id='Name' type='name' />
 
     <label for='email'>Email Address</label>
-    <input id='email' type='email' />
-    
-    <label for='height'>Height</label>
-    <input id='height' type='number' />
+    <input id='email' type='email' required />
 
-    <label for='weight'>Weight</label>
-    <input id='weight' type='number' />
+    <label for='gender'>Gender</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
 
-    <button name='Sign In' type='button' class="primary button">Create Account</button>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <label for='age'>Age</label>
+    <input id='age' type='number' required />
+
+    <label for='height'>Height (cms)</label>
+    <input id='height' type='number' min="25" max="250" step="0.1" required />
+
+    <label for='weight'>Weight (kgs)</label>
+    <input id='weight' type='number' min="5" max="150" step="0.01" required />
+
+    <button name='Sign In' type='button' class="primary button">Generate BMI</button>
   </form>
 </body>
 

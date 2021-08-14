@@ -1,8 +1,32 @@
+*,*::after,*::before{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 70.5%  ;
+}
+.comp{
+  border: 2px solid black;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1440186410080-d2627b864960?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTYyODk0NzY0NQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600') center no-repeat;
+  background-size: cover;
+}
+
 .form {
+  position: relative;
+  z-index: 20;
+  background: white ;
+  border: 2px solid black;
+  border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
+    margin: 1rem auto;
     padding: 2rem;
   }
   @media only screen and (max-width: 900px){
@@ -15,7 +39,7 @@
   .form > label {
     color: #5c5e62;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 2rem;
     margin-bottom: 1rem;
   }
@@ -24,7 +48,7 @@
     border: 1px solid #f4f4f4;
     outline: none;
     color: #393c41;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 1.2rem 2rem;
     border-radius: 5rem;
     font-weight: 600;
@@ -64,3 +88,10 @@
     background-color: #3e6ae1;
     color: white;
   }
+  .redu_grp{
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    gap: 3rem;
+  }
+ 

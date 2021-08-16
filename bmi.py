@@ -8,7 +8,10 @@ def home():
     return render_template('home.html')
 
 @app.route('/result/',methods=['POST'])
-def result():
+def bmi_res():
+    if request.method=='POST':
+        email=request.form['email_name']
+        print(email)
     return render_template('bmi_res.html')
 
 if __name__=='__main__':

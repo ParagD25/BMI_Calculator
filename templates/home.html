@@ -6,37 +6,43 @@
 <body>
   <div class="comp">
     <form class='form' action="{{url_for('bmi_res')}}" method="POST">
-      <h1 class="heading_h1">BMI Calculator</h1>
       <label for='Name'><b>Name</b></label>
       <input id='Name' type='name' />
 
       <label for='email'><b>Email Address</b></label>
-      <input id='email' type='email' required />
+      <input id='email' type='email' name='email_name' required />
 
       <label for='gender'><b>Gender</b></label>
       <div class="redu_grp">
-        <input type="radio" id="male" name="gender" value="male">
+        <input type="radio" id="male" name="m_gender" value="male">
         <label for="male">Male</label>
 
-        <input type="radio" id="female" name="gender" value="female">
+        <input type="radio" id="female" name="f_gender" value="female">
         <label for="female">Female</label>
 
-        <input type="radio" id="other" name="gender" value="other">
+        <input type="radio" id="other" name="o_gender" value="other">
         <label for="other">Other</label>
       </div>
 
       <label for='age'><b>Age</b></label>
-      <input id='age' type='number' min="1" max="115" required />
+      <input id='age' type='number' min="1" max="115" name='age' required />
 
       <label for='height'><b>Height (cms)</b></label>
-      <input id='height' type='number' min="25" max="250" step="0.1" required />
+      <input id='height' type='number' min="25" max="250" step="0.1" name="height" required />
 
       <label for='weight'><b>Weight (kgs)</b></label>
-      <input id='weight' type='number' min="5" max="175" step="0.01" required />
+      <input id='weight' type='number' min="5" max="175" step="0.01" name="weight" required />
 
-      <button name='generate' type='submit' class="primary button">Generate BMI</button>
+      <button name='generate' type='submit' class="primary button submitBtn">Generate BMI</button>
     </form>
-  </div>
-</body>
 
+    <!-- <div class="modal_box">
+      <h1>BMI Calculated</h1>
+      <button class="close_modal">Close</button>
+    </div> -->
+  </div>
+  
+
+</body>
+<script src="../static//script.js"></script>
 </html>

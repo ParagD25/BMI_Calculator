@@ -13,8 +13,9 @@ html{
   justify-content: center; 
   align-items: center;  
   height: 100%;
-  background: url('https://images.unsplash.com/photo-1440186410080-d2627b864960?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTYyODk0NzY0NQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600') center no-repeat;
+  background: url('https://www.grandecig.com/hs-fs/hubfs/images/blog_images/2020_Blog_Images/CompareTopDietTrends.jpg?width=730&name=CompareTopDietTrends.jpg') center no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .form {
@@ -38,7 +39,7 @@ html{
   
   .form > label {
     color: #5c5e62;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     padding-left: 2rem;
     margin-bottom: 1rem;
@@ -93,5 +94,49 @@ html{
     margin-left: 2rem;
     margin-bottom: 3rem;
     gap: 3rem;
+    font-size: 1.3rem;
   }
- 
+  .modal_box{
+    z-index: 100;
+    position: absolute;
+    height: 40%;
+    width: 30%;
+    border: 2px solid black;
+    display: none;
+    justify-content: center;
+    padding: 3rem 5rem;
+    background-color: #5c5e62;
+    color:yellowgreen;
+    text-align: center;
+  }
+  .open_modal{
+    display: flex;
+    flex-direction: column;
+  }
+  .close_modal{
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+    display: inline-block;
+    width: 6rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+  }
+.msg{
+  background: white;
+  color: #393c41;
+  font-size: 3rem;
+  text-align: center;
+  width: 40%;
+  height: 79%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem;
+  border: 2px solid black;
+  }
+.back_btn{
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 15rem;
+  }

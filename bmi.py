@@ -34,7 +34,7 @@ def bmi_res():
         email=request.form['email_name']
         height=request.form['height']
         weight=request.form['weight']
-        user_bmi=(weight)/((weight/100)**2)
+        user_bmi=int(weight)/((int(weight)/100)**2)
 
         if db.session.query(User_data).filter(User_data.user_email==email).count()==0:
             data=User_data(email,height,weight)

@@ -1,10 +1,27 @@
-# BMI Calculator
-Calculating one's Body Mass Index (BMI)<br>
+# BMI Calculator 🏃
+Calculating Body Mass Index (BMI)<br>
+BMI is Calculated using the formula - <strong>weight (kg) / (height (m))^2</strong>
 
-[![](https://camo.githubusercontent.com/2fb0723ef80f8d87a51218680e209c66f213edf8/68747470733a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6d6164652d776974682d707974686f6e2e737667)](https://python.org)
+## Libraries Used 🗄️:
+<li><b><i>flask</i></b> - To Create the Website.</li>
+<li><b><i>flask_sqlalchemy</i></b> - To connect the database with the Website.</li>
+<li><b><i>mail</i></b> - To sent email to the User.</li>
 
+## How To Use 💻:
+- Clone this repository<br>
+`git clone https://github.com/ParagD25/BMI_Calculator`
+- Go into the repository<br>
+`cd BMI_Calculator`
+- Remove current origin repository<br>
+`git remote remove origin`
+- Create new virtual python environment<br>
+`python3 -m venv venv`
+- Activate virtual python environment<br>
+`source venv/bin/activate`
+- Install all the libraries mentioned above
+- Run Python file<br>
+`python bmi.py`
 
 
 ## Contributing ©️:
-
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

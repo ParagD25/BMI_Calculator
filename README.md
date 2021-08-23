@@ -22,6 +22,16 @@ BMI is Calculated using the formula - <strong>weight (kg) / (height (m))^2</stro
 - Run Python file<br>
 `python bmi.py`
 
+## Screenshots 📸:
+<h3 align="center">Home Page</h3>
+<p align="center">
+  <img src="https://github.com/ParagD25/BMI_Calculator/blob/master/Images/home.png" alt="Home Page" width="70%">
+</p>
+
+<h3 align="center">Result Page</h3>
+<p align="center">
+  <img src="https://github.com/ParagD25/BMI_Calculator/blob/master/Images/result.png" alt="Result Page" width="70%">
+</p>
 
 ## Contributing ©️:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
